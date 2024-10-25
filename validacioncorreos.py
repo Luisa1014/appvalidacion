@@ -4,7 +4,7 @@ import requests
 import io
 
 # Configuración de la API de ZeroBounce
-ZERO_BOUNCE_API_KEY = "cd3995d384974dc694ca441dee873d50"  # Reemplaza con tu API Key de ZeroBounce
+ZERO_BOUNCE_API_KEY = "64babb3d17a4475ea72001b882708f6e"  # Reemplaza con tu API Key de ZeroBounce
 
 def verificar_correo(correo):
     """
@@ -45,7 +45,7 @@ def procesar_archivo(archivo):
     return df_valido
 
 def main():
-    st.title("Validador de Correos con ZeroBounce")
+    st.title("Validador de Correos")
     st.write("Adjunta uno o varios archivos de Excel para validar los correos en la columna 'correo'. Los correos inválidos serán eliminados del archivo de salida.")
     
     archivos = st.file_uploader("Sube tus archivos de Excel", type="xlsx", accept_multiple_files=True)
